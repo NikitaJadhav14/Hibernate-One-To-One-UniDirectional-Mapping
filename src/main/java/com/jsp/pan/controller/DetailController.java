@@ -7,10 +7,10 @@ public class DetailController {
 
 	public static void main(String[] args) {
 		PersonService personService = new PersonService();
-		personService.gePersonById(1);
+		personService.gePersonById(2);
 
 		PanService panService = new PanService();
-		panService.getPanById(1);
+		panService.getPanById(2);
 
 	}
 

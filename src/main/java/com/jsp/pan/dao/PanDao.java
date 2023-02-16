@@ -24,7 +24,10 @@ public class PanDao {
 
 	public Pan getPanByID(int id) {
 		Pan p1 = entityManager.find(Pan.class, id);
-		System.out.println("Pan Detail");
+		System.out.println("Pan Details");
+		System.out.println(p1.getPanid());
+		System.out.println(p1.getPanno());
+		
 		return p1;
 	}
 
@@ -49,7 +52,7 @@ public class PanDao {
 			entityTransaction.commit();
 
 		} else {
-			System.out.println("Pan Details found..");
+			System.out.println("Pan Details Not found..");
 
 		}
 		return p1;

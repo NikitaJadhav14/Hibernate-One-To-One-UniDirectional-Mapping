@@ -24,6 +24,9 @@ public class PersonDao {
 
 	public Person getPersonByID(int id) {
 		Person p1 = entityManager.find(Person.class, id);
+		System.out.println(p1.getId());
+		System.out.println(p1.getName());
+		System.out.println(p1.getEmail());
 		System.out.println("Person Detail");
 		return p1;
 	}
@@ -50,7 +53,7 @@ public class PersonDao {
 			entityTransaction.commit();
 
 		} else {
-			System.out.println("Person Details found..");
+			System.out.println("Person Details Not found..");
 
 		}
 		return p1;
