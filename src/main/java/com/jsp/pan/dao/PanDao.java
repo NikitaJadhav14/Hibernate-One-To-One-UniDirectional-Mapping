@@ -1,5 +1,6 @@
 package com.jsp.pan.dao;
 
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -27,7 +28,7 @@ public class PanDao {
 		System.out.println("Pan Details");
 		System.out.println(p1.getPanid());
 		System.out.println(p1.getPanno());
-		
+
 		return p1;
 	}
 
@@ -57,4 +58,6 @@ public class PanDao {
 		}
 		return p1;
 	}
+
+	
 }
